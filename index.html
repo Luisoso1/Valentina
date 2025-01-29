@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Inicio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/colorbox.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="index">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+    <header class="site-header">
+        <div class="hero">
+            <div class="contenido-header">
+                <div class="informacion-evento">
+
+
+                    <h1 class="nombre-sitio"></h1>
+                </div>
+                <!--.informacion-evento-->
+
+            </div>
+        </div>
+        <!--.hero-->
+    </header>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="navegacion-principal clearfix">
+                <a href="Galeria.html">Galeria de fotos</a>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+        <!--.contenedor-->
+    </div>
+    <!--.barra-->
+    <section class=" seccion">
+        <div>
+            <h2>¿Quienes somos?</h2>
+        </div>
+        <div class="contenedorquienes">
+            <img src="/img/acerca.jpg" alt="" class="imagen-redonda">
+            <p>
+                Somos agentes comerciales directos de fabrica. Asesoramos y surtimos su negocio, nos esmeramos en la innovación permanente para tener nuestra clientela satisfecha.
+            </p>
+        </div>
+    </section>
+    <!--seccion-->
+
+    
+
+    <section class="precios seccion">
+        <h2>Mis libros</h2>
+        <div class="contenedor">
+            <ul class="lista-precios clearfix">
+
+                <li>
+                    <div class="tabla-precio">
+                        <img src="/img/Propios.jpeg" class="contenedor">
+                        <h3>Mis libros</h3>
+                        <a href="Libros.html" class="button hollow">Ir a mis libros</a>
+                    </div>
+                </li>
+                
+
+                <li>
+                    <div class="tabla-precio">
+                        <img src="/img/antologias.jpg" class="contenedor">
+                        <h3>Antologias en las que he participado</h3>
+                        <a href="Antologias.html" class="button hollow">Ir a mis antologias</a>
+                    </div>
+                </li>
+
+                
+            </ul>
+        </div>
+
+        <div class="banner">
+        
+
+        </div>
+    </section>
+
+    <section class="banner2">
+
+    </section>
+    
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div>
+                &nbsp;
+            </div>
+            <div class="footer-informacion">
+                <h3>Sobre <span>Expresiones y muñecos</span></h3>
+                <p> Somos agentes comerciales directos de fabrica. Asesoramos y surtimos su negocio, nos esmeramos en la innovación permanente para tener nuestra  clientela satisfecha.</p>
+            </div>
+        </div>
+        
+
+        <p class="copyright">
+            Todos los derechos Reservados Expresiones y Muñecos 2024.
+        </p>
+        
+    </footer>
+    
+    <script>
+        document.querySelector('.menu-movil').addEventListener('click', function() {
+            document.querySelector('.barra').classList.toggle('menu-abierto');
+        });
+    </script>
+
+<script>
+    // Función para abrir el modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    // Cierra el modal cuando el usuario hace clic fuera de él
+    window.onclick = function(event) {
+      const modal = document.getElementById("myModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+    
+</body>
+
+    
