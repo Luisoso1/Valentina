@@ -243,25 +243,87 @@ h1.nombre-sitio span {
 
 div.hero {
   background-image: url(../img/Banner.png);
-  height: 100vh;
+  min-height: 110vh; /* Se asegura que ocupe al menos el 100% de la altura de la ventana */
   background-position: top center;
-  background-size: cover;
+  background-size: cover; /* Mantiene la proporción de la imagen */
+  background-repeat: no-repeat;
+  
 }
 
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
+/* Para pantallas de hasta 1000px */
+@media (max-width: 1000px) {
   div.hero {
-    height: 37vh; /* Reduce la altura para pantallas pequeñas */
-    background-position: center top; /* Ajusta el foco de la imagen */
+    min-height: 85vh;
+    background-size: cover;
+    background-attachment: scroll; /* Desactiva el efecto 'fixed' para pantallas pequeñas */
   }
 }
 
-@media (max-width: 480px) {
+/* Para pantallas de hasta 900px */
+@media (max-width: 900px) {
   div.hero {
-    height: 40vh; /* Altura más reducida para móviles */
+    min-height: 80vh;
+    background-size: cover;
+    
   }
 }
+
+/* Para pantallas de hasta 800px */
+@media (max-width: 800px) {
+  div.hero {
+    min-height: 68vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Para pantallas de hasta 700px */
+@media (max-width: 700px) {
+  div.hero {
+    min-height: 62vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Para pantallas de hasta 600px */
+@media (max-width: 600px) {
+  div.hero {
+    min-height: 52vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Para pantallas de hasta 500px */
+@media (max-width: 500px) {
+  div.hero {
+    min-height: 42vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Para pantallas de hasta 400px */
+@media (max-width: 400px) {
+  div.hero {
+    min-height: 34vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Para pantallas de hasta 300px */
+@media (max-width: 300px) {
+  div.hero {
+    min-height: 23vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+
+
 
 
 div.contenido-header {
@@ -1461,4 +1523,4 @@ table.registrados tr:nth-child(4n-1) {
 @media (max-width: 600px) { .banner2 { height: 31vh; font-size: 1rem; } }
 @media (max-width: 500px) { .banner2 { height: 19vh; font-size: 0.9rem; } }
 @media (max-width: 400px) { .banner2 { height: 17vh; font-size: 0.8rem; } }
-@media (max-width: 300px) { .banner2 { height: 13vh; font-size: 0.7rem; } }
+@media (max-width: 300px) { .banner { height: 13vh; font-size: 0.7rem; } }

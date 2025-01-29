@@ -73,265 +73,309 @@
         <ul class="lista-invitados clearfix">
 
 
-            <li>
-                <div class="invitado" onclick="openModal()">
-                    <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                    <p>La vez que morí por segunda vez</p>
-                  </div>
-                <!-- END .invitado -->
-            </li>
-
-            <!--  Modal -->
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  
-                  <!-- Imagen del lado izquierdo -->
-                  <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                  
-                  <!-- Descripción del lado derecho -->
-                  <div class="description">
+          <li>
+            <div class="invitado" onclick="openModal(0)">
+                <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+                <p>La vez que morí por segunda vez</p>
+            </div>
+        </li>
+        
+        <!-- Primer Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal(0)">&times;</span>
+                
+                <!-- Imagen del lado izquierdo -->
+                <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+                
+                <!-- Descripción del lado derecho -->
+                <div class="description">
                     <h2>La vez que morí por segunda vez</h2>
-                    <p>Esta es una descripción detallada del libro, donde se explican los temas principales, los personajes, y otros detalles interesantes.</p>
+                    <p>• La vez que morí por segunda vez – Mi obra más reciente, autopublicada, aborda la crisis de los veinte a través de la poesía, explorando temas como la identidad, los miedos y el deseo de pertenecer.
+                        Mi camino artístico y profesional refleja mi compromiso con la creatividad y la exploración de nuevas perspectivas, siempre buscando inspirar y conectar a través de mis palabras y melodías.
+                    </p>
                     
                     <!-- Banner de redes sociales -->
-                    <p><strong>Sigueme en redes sociales</strong></p>
+                    <p><strong>Sígueme en redes sociales</strong></p>
                     <div class="social-banner">
                         <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
                         <a href=""><i class="fab fa-twitter fa-2x"></i></a>
                         <a href=""><i class="fab fa-instagram fa-2x"></i></a>
                         <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                        
                     </div>
-
-                    
-                    <p><strong>Compra el libro aqui:</strong></p>
-                        <div class="social-banner">
-                            <a href=""><i class="fab fa-amazon fa-2x"></i></a>
-                        </div>
-                  </div>
+        
+                    <p><strong>Compra el libro aquí:</strong></p>
+                    <div class="social-banner">
+                        <a href=""><i class="fab fa-amazon fa-2x"></i></a>
+                    </div>
                 </div>
-              </div>
             </div>
+        </div>
+        
+        <li>
+            <div class="invitado" onclick="openModal(1)">
+                <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+                <p>Encantamientos en versos </p>
+            </div>
+        </li>
+        
+        <!-- Segundo Modal (mismo ID pero manejado con querySelectorAll) -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal(1)">&times;</span>
+                
+                <!-- Imagen del lado izquierdo -->
+                <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+                
+                <!-- Descripción del lado derecho -->
+                <div class="description">
+                    <h2>Encantamientos en versos</h2>
+                    <p>Una obra única que fusiona poesía y arte visual, transportando al lector a un universo lleno de magia, emociones y creatividad. Cada página de Encantamientos en versos es una invitación a soñar y a descubrir la belleza en lo cotidiano.</p>
+                    
+                    <!-- Banner de redes sociales -->
+                    <p><strong>Sígueme en redes sociales</strong></p>
+                    <div class="social-banner">
+                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
+                    </div>
+        
+                    <p><strong>Compra el libro aquí:</strong></p>
+                    <div class="social-banner">
+                        <a href=""><i class="fab fa-amazon fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <li>
+          <div class="invitado" onclick="openModal(2)">
+              <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+              <p>La vez que morí por segunda vez</p>
+          </div>
+      </li>
+      
+      <!-- Primer Modal -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal(2)">&times;</span>
+              
+              <!-- Imagen del lado izquierdo -->
+              <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+              
+              <!-- Descripción del lado derecho -->
+              <div class="description">
+                  <h2>La vez que morí por segunda vez</h2>
+                  <p>• La vez que morí por segunda vez – Mi obra más reciente, autopublicada, aborda la crisis de los veinte a través de la poesía, explorando temas como la identidad, los miedos y el deseo de pertenecer.
+                      Mi camino artístico y profesional refleja mi compromiso con la creatividad y la exploración de nuevas perspectivas, siempre buscando inspirar y conectar a través de mis palabras y melodías.
+                  </p>
+                  
+                  <!-- Banner de redes sociales -->
+                  <p><strong>Sígueme en redes sociales</strong></p>
+                  <div class="social-banner">
+                      <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                      <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                      <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
+                  </div>
+      
+                  <p><strong>Compra el libro aquí:</strong></p>
+                  <div class="social-banner">
+                      <a href=""><i class="fab fa-amazon fa-2x"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <li>
+          <div class="invitado" onclick="openModal(3)">
+              <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+              <p>Encantamientos en versos </p>
+          </div>
+      </li>
+      
+      <!-- Segundo Modal (mismo ID pero manejado con querySelectorAll) -->
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal(3)">&times;</span>
+              
+              <!-- Imagen del lado izquierdo -->
+              <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+              
+              <!-- Descripción del lado derecho -->
+              <div class="description">
+                  <h2>Encantamientos en versos</h2>
+                  <p>Una obra única que fusiona poesía y arte visual, transportando al lector a un universo lleno de magia, emociones y creatividad. Cada página de Encantamientos en versos es una invitación a soñar y a descubrir la belleza en lo cotidiano.</p>
+                  
+                  <!-- Banner de redes sociales -->
+                  <p><strong>Sígueme en redes sociales</strong></p>
+                  <div class="social-banner">
+                      <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                      <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                      <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                      <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
+                  </div>
+      
+                  <p><strong>Compra el libro aquí:</strong></p>
+                  <div class="social-banner">
+                      <a href=""><i class="fab fa-amazon fa-2x"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <li>
+        <div class="invitado" onclick="openModal(4)">
+            <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+            <p>La vez que morí por segunda vez</p>
+        </div>
+    </li>
+    
+    <!-- Primer Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
             
-            <li>
-                <div class="invitado" onclick="openModal()">
-                    <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                    <p>La vez que morí por segunda vez</p>
-                  </div>
-                <!-- END .invitado -->
-            </li>
-
-            <!--  Modal -->
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  
-                  <!-- Imagen del lado izquierdo -->
-                  <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                  
-                  <!-- Descripción del lado derecho -->
-                  <div class="description">
-                    <h2>La vez que morí por segunda vez</h2>
-                    <p>Esta es una descripción detallada del libro, donde se explican los temas principales, los personajes, y otros detalles interesantes.</p>
-                    
-                    <!-- Banner de redes sociales -->
-                    <p><strong>Sigueme en redes sociales</strong></p>
-                    <div class="social-banner">
-                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                        
-                    </div>
-
-                    
-                    <p><strong>Compra el libro aqui:</strong></p>
-                        <div class="social-banner">
-                            <a href=""><i class="fab fa-amazon fa-2x"></i></a>
-                        </div>
-                  </div>
+            <!-- Imagen del lado izquierdo -->
+            <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+            
+            <!-- Descripción del lado derecho -->
+            <div class="description">
+                <h2>La vez que morí por segunda vez</h2>
+                <p>• La vez que morí por segunda vez – Mi obra más reciente, autopublicada, aborda la crisis de los veinte a través de la poesía, explorando temas como la identidad, los miedos y el deseo de pertenecer.
+                    Mi camino artístico y profesional refleja mi compromiso con la creatividad y la exploración de nuevas perspectivas, siempre buscando inspirar y conectar a través de mis palabras y melodías.
+                </p>
+                
+                <!-- Banner de redes sociales -->
+                <p><strong>Sígueme en redes sociales</strong></p>
+                <div class="social-banner">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
                 </div>
+    
+                <p><strong>Compra el libro aquí:</strong></p>
+                <div class="social-banner">
+                    <a href=""><i class="fab fa-amazon fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <li>
+        <div class="invitado" onclick="openModal(5)">
+            <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+            <p>Encantamientos en versos </p>
+        </div>
+    </li>
+    
+    <!-- Segundo Modal (mismo ID pero manejado con querySelectorAll) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            
+            <!-- Imagen del lado izquierdo -->
+            <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+            
+            <!-- Descripción del lado derecho -->
+            <div class="description">
+                <h2>Encantamientos en versos</h2>
+                <p>Una obra única que fusiona poesía y arte visual, transportando al lector a un universo lleno de magia, emociones y creatividad. Cada página de Encantamientos en versos es una invitación a soñar y a descubrir la belleza en lo cotidiano.</p>
+                
+                <!-- Banner de redes sociales -->
+                <p><strong>Sígueme en redes sociales</strong></p>
+                <div class="social-banner">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
+                </div>
+    
+                <p><strong>Compra el libro aquí:</strong></p>
+                <div class="social-banner">
+                    <a href=""><i class="fab fa-amazon fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <li>
+      <div class="invitado" onclick="openModal(6)">
+          <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+          <p>La vez que morí por segunda vez</p>
+      </div>
+  </li>
+  
+  <!-- Primer Modal -->
+  <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal(6)">&times;</span>
+          
+          <!-- Imagen del lado izquierdo -->
+          <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
+          
+          <!-- Descripción del lado derecho -->
+          <div class="description">
+              <h2>La vez que morí por segunda vez</h2>
+              <p>• La vez que morí por segunda vez – Mi obra más reciente, autopublicada, aborda la crisis de los veinte a través de la poesía, explorando temas como la identidad, los miedos y el deseo de pertenecer.
+                  Mi camino artístico y profesional refleja mi compromiso con la creatividad y la exploración de nuevas perspectivas, siempre buscando inspirar y conectar a través de mis palabras y melodías.
+              </p>
+              
+              <!-- Banner de redes sociales -->
+              <p><strong>Sígueme en redes sociales</strong></p>
+              <div class="social-banner">
+                  <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
               </div>
-            </div>
-            <li>
-                <div class="invitado" onclick="openModal()">
-                    <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                    <p>La vez que morí por segunda vez</p>
-                  </div>
-                <!-- END .invitado -->
-            </li>
-
-            <!--  Modal -->
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  
-                  <!-- Imagen del lado izquierdo -->
-                  <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                  
-                  <!-- Descripción del lado derecho -->
-                  <div class="description">
-                    <h2>La vez que morí por segunda vez</h2>
-                    <p>Esta es una descripción detallada del libro, donde se explican los temas principales, los personajes, y otros detalles interesantes.</p>
-                    
-                    <!-- Banner de redes sociales -->
-                    <p><strong>Sigueme en redes sociales</strong></p>
-                    <div class="social-banner">
-                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                        
-                    </div>
-
-                    
-                    <p><strong>Compra el libro aqui:</strong></p>
-                        <div class="social-banner">
-                            <a href=""><i class="fab fa-amazon fa-2x"></i></a>
-                        </div>
-                  </div>
-                </div>
+  
+              <p><strong>Compra el libro aquí:</strong></p>
+              <div class="social-banner">
+                  <a href=""><i class="fab fa-amazon fa-2x"></i></a>
               </div>
-            </div>
-            <li>
-                <div class="invitado" onclick="openModal()">
-                    <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                    <p>La vez que morí por segunda vez</p>
-                  </div>
-                <!-- END .invitado -->
-            </li>
-
-            <!--  Modal -->
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  
-                  <!-- Imagen del lado izquierdo -->
-                  <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                  
-                  <!-- Descripción del lado derecho -->
-                  <div class="description">
-                    <h2>La vez que morí por segunda vez</h2>
-                    <p>Esta es una descripción detallada del libro, donde se explican los temas principales, los personajes, y otros detalles interesantes.</p>
-                    
-                    <!-- Banner de redes sociales -->
-                    <p><strong>Sigueme en redes sociales</strong></p>
-                    <div class="social-banner">
-                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                        
-                    </div>
-
-                    
-                    <p><strong>Compra el libro aqui:</strong></p>
-                        <div class="social-banner">
-                            <a href=""><i class="fab fa-amazon fa-2x"></i></a>
-                        </div>
-                  </div>
-                </div>
+          </div>
+      </div>
+  </div>
+  
+  <li>
+      <div class="invitado" onclick="openModal(7)">
+          <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+          <p>Encantamientos en versos </p>
+      </div>
+  </li>
+  
+  <!-- Segundo Modal (mismo ID pero manejado con querySelectorAll) -->
+  <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal(7)">&times;</span>
+          
+          <!-- Imagen del lado izquierdo -->
+          <img src="img/invitados/encantamientos.jpeg" alt="Imagen Libro 2">
+          
+          <!-- Descripción del lado derecho -->
+          <div class="description">
+              <h2>Encantamientos en versos</h2>
+              <p>Una obra única que fusiona poesía y arte visual, transportando al lector a un universo lleno de magia, emociones y creatividad. Cada página de Encantamientos en versos es una invitación a soñar y a descubrir la belleza en lo cotidiano.</p>
+              
+              <!-- Banner de redes sociales -->
+              <p><strong>Sígueme en redes sociales</strong></p>
+              <div class="social-banner">
+                  <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                  <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
               </div>
-            </div>
-            <li>
-                <div class="invitado" onclick="openModal()">
-                    <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                    <p>La vez que morí por segunda vez</p>
-                  </div>
-                <!-- END .invitado -->
-            </li>
-
-            <!--  Modal -->
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  
-                  <!-- Imagen del lado izquierdo -->
-                  <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                  
-                  <!-- Descripción del lado derecho -->
-                  <div class="description">
-                    <h2>La vez que morí por segunda vez</h2>
-                    <p>Esta es una descripción detallada del libro, donde se explican los temas principales, los personajes, y otros detalles interesantes.</p>
-                    
-                    <!-- Banner de redes sociales -->
-                    <p><strong>Sigueme en redes sociales</strong></p>
-                    <div class="social-banner">
-                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                        
-                    </div>
-
-                    
-                    <p><strong>Compra el libro aqui:</strong></p>
-                        <div class="social-banner">
-                            <a href=""><i class="fab fa-amazon fa-2x"></i></a>
-                        </div>
-                  </div>
-                </div>
+  
+              <p><strong>Compra el libro aquí:</strong></p>
+              <div class="social-banner">
+                  <a href=""><i class="fab fa-amazon fa-2x"></i></a>
               </div>
-            </div>
-            <li>
-                <div class="invitado" onclick="openModal()">
-                    <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                    <p>La vez que morí por segunda vez</p>
-                  </div>
-                <!-- END .invitado -->
-            </li>
-
-            <!--  Modal -->
-
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close" onclick="closeModal()">&times;</span>
-                  
-                  <!-- Imagen del lado izquierdo -->
-                  <img src="img/invitados/libro1.png" alt="Imagen Libro 1">
-                  
-                  <!-- Descripción del lado derecho -->
-                  <div class="description">
-                    <h2>La vez que morí por segunda vez</h2>
-                    <p>Esta es una descripción detallada del libro, donde se explican los temas principales, los personajes, y otros detalles interesantes.</p>
-                    
-                    <!-- Banner de redes sociales -->
-                    <p><strong>Sigueme en redes sociales</strong></p>
-                    <div class="social-banner">
-                        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                        <a href=""><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                        
-                    </div>
-
-                    
-                    <p><strong>Compra el libro aqui:</strong></p>
-                        <div class="social-banner">
-                            <a href=""><i class="fab fa-amazon fa-2x"></i></a>
-                        </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style="display:none;">
-
-                <div class="invitado-info" id="invitado6">
-                    <h2>Peluche</h2>
-                    <img src="img/invitado6.jpg" alt="">
-                    <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at
-                        ex blandit vehicula. Morbi porttitor tempus euismod.</p>
-                </div>
-
-            </div>
+          </div>
+      </div>
+  </div>
 
 
         </ul>
@@ -343,19 +387,23 @@
   
 
     <footer class="site-footer">
-        <div class="contenedor clearfix">
-            <div>
-                &nbsp;
-            </div>
-            <div class="footer-informacion">
-                <h3>Sobre <span>Expresiones y muñecos</span></h3>
-                <p> Somos agentes comerciales directos de fabrica. Asesoramos y surtimos su negocio, nos esmeramos en la innovación permanente para tener nuestra  clientela satisfecha.</p>
-            </div>
-        </div>
-        
+      <div class="contenedor clearfix">
+          <div>
+              &nbsp;
+          </div>
+          <div class="footer-informacion">
+              <h3>Sobre <span>Valentina Tobón</span></h3>
+              <p> Soy ingeniera financiera, graduada de la Universidad Libre, donde desarrollé mi formación con pasión y dedicación. Desde pequeña, he encontrado en los libros, la escritura y la música no solo un refugio, sino también una fuente constante de inspiración que ha influido profundamente en mi desarrollo personal y académico. En mis tiempos libres, me dedico a las artes, especialmente a la escritura de poesía y cuentos, además de tocar el violín como parte de diversas orquestas musicales. Mi amor por la literatura y la música me ha llevado a explorar la creatividad en múltiples formas, participando activamente en concursos y antologías que destacan mis habilidades artísticas.</p>
+          </div>
+      </div>
+      
 
-        
-    </footer>
+      <p class="copyright">
+          Todos los derechos Reservados Expresiones y Muñecos 2024.
+      </p>
+      
+  </footer>
+  
     
     <script>
         document.querySelector('.menu-movil').addEventListener('click', function() {
@@ -364,24 +412,26 @@
     </script>
 
 <script>
-    // Función para abrir el modal
-    function openModal() {
-      document.getElementById("myModal").style.display = "flex";
-    }
+  // Función para abrir el modal correspondiente
+  function openModal(index) {
+      document.querySelectorAll("#myModal")[index].style.display = "flex";
+  }
 
-    // Función para cerrar el modal
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
+  // Función para cerrar el modal correspondiente
+  function closeModal(index) {
+      document.querySelectorAll("#myModal")[index].style.display = "none";
+  }
 
-    // Cierra el modal cuando el usuario hace clic fuera de él
-    window.onclick = function(event) {
-      const modal = document.getElementById("myModal");
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
+  // Cierra el modal cuando el usuario hace clic fuera de él
+  window.onclick = function(event) {
+      document.querySelectorAll("#myModal").forEach(modal => {
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
+      });
+  }
+</script>
+
     
 </body>
 
