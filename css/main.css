@@ -316,7 +316,7 @@ div.hero {
 /* Para pantallas de hasta 300px */
 @media (max-width: 300px) {
   div.hero {
-    min-height: 23vh;
+    min-height: 2vh;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -1524,3 +1524,28 @@ table.registrados tr:nth-child(4n-1) {
 @media (max-width: 500px) { .banner2 { height: 19vh; font-size: 0.9rem; } }
 @media (max-width: 400px) { .banner2 { height: 17vh; font-size: 0.8rem; } }
 @media (max-width: 300px) { .banner { height: 13vh; font-size: 0.7rem; } }
+
+.social-banner {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.social-banner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.google { background: #db4a39; }
+.pinterest { background: #bd081c; }
+.email { background: #555; }
+.instagram { background: #e4405f; }
