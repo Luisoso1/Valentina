@@ -253,16 +253,33 @@ div.hero {
 /* Para pantallas de hasta 1000px */
 @media (max-width: 1000px) {
   div.hero {
-    min-height: 85vh;
+    min-height: 72vh;
     background-size: cover;
     background-attachment: scroll; /* Desactiva el efecto 'fixed' para pantallas pequeñas */
   }
 }
 
+@media (max-width: 950px) {
+  div.hero {
+    min-height: 67vh;
+    background-size: cover;
+    background-attachment: scroll; /* Desactiva el efecto 'fixed' para pantallas pequeñas */
+  }
+}
+
+
 /* Para pantallas de hasta 900px */
 @media (max-width: 900px) {
   div.hero {
-    min-height: 80vh;
+    min-height: 65vh;
+    background-size: cover;
+    
+  }
+}
+
+@media (max-width: 850px) {
+  div.hero {
+    min-height: 60vh;
     background-size: cover;
     
   }
@@ -271,16 +288,33 @@ div.hero {
 /* Para pantallas de hasta 800px */
 @media (max-width: 800px) {
   div.hero {
-    min-height: 68vh;
+    min-height: 55vh;
     background-size: cover;
     background-attachment: scroll;
   }
 }
 
+@media (max-width: 750px) {
+  div.hero {
+    min-height: 53vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+
 /* Para pantallas de hasta 700px */
 @media (max-width: 700px) {
   div.hero {
-    min-height: 62vh;
+    min-height: 50vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 650px) {
+  div.hero {
+    min-height: 45vh;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -289,7 +323,15 @@ div.hero {
 /* Para pantallas de hasta 600px */
 @media (max-width: 600px) {
   div.hero {
-    min-height: 52vh;
+    min-height: 40vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 550px) {
+  div.hero {
+    min-height: 35vh;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -298,7 +340,15 @@ div.hero {
 /* Para pantallas de hasta 500px */
 @media (max-width: 500px) {
   div.hero {
-    min-height: 42vh;
+    min-height: 30vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 450px) {
+  div.hero {
+    min-height: 27vh;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -307,7 +357,15 @@ div.hero {
 /* Para pantallas de hasta 400px */
 @media (max-width: 400px) {
   div.hero {
-    min-height: 34vh;
+    min-height: 25vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 350px) {
+  div.hero {
+    min-height: 22vh;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -316,7 +374,7 @@ div.hero {
 /* Para pantallas de hasta 300px */
 @media (max-width: 300px) {
   div.hero {
-    min-height: 2vh;
+    min-height: 18vh;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -590,8 +648,8 @@ div.detalle-evento p {
 }
 /* Invitados **/
 
- /* Estilos del fondo del modal */
- .modal {
+/* Estilos generales para el modal */
+.modal {
   display: none; /* Oculto por defecto */
   position: fixed;
   top: 0;
@@ -610,10 +668,11 @@ div.detalle-evento p {
   background-color: white;
   padding: 30px;
   border-radius: 8px;
-  max-width: 800px;
+  max-width: 1100px;
   width: 90%;
   text-align: left;
   align-items: center;
+  overflow: hidden; /* Evita que el contenido se desborde */
 }
 
 /* Estilos de la imagen en el modal (lado izquierdo) */
@@ -622,11 +681,14 @@ div.detalle-evento p {
   height: auto;
   border-radius: 5px;
   margin-right: 30px;
+  object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
 }
 
 /* Estilos para la descripción (lado derecho) */
 .description {
   flex: 1;
+  overflow-y: auto; /* Permite desplazarse si la descripción es muy larga */
+  max-height: 400px; /* Limitar la altura máxima de la descripción */
 }
 
 /* Botón de cerrar */
@@ -644,17 +706,140 @@ div.detalle-evento p {
   color: black;
 }
 
+/* Media Queries para pantallas entre 300px y 1000px */
+@media (max-width: 1000px) and (min-width: 900px) {
+  .modal-content {
+    flex-direction: row;
+    font-size: 1.2rem;
+  }
+
+  .modal-content img {
+    width: 35%;
+  }
+
+  .description {
+    width: 60%;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 800px) {
+  .modal-content {
+    flex-direction: row;
+    font-size: 1.1rem;
+  }
+
+  .modal-content img {
+    width: 40%;
+  }
+
+  .description {
+    width: 55%;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 700px) {
+  .modal-content {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .modal-content img {
+    width: 45%;
+  }
+
+  .description {
+    width: 50%;
+  }
+}
+
+@media (max-width: 699px) and (min-width: 600px) {
+  .modal-content {
+    flex-direction: row;
+    font-size: 0.95rem;
+  }
+
+  .modal-content img {
+    width: 50%;
+  }
+
+  .description {
+    width: 45%;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
+  .modal-content {
+    flex-direction: row;
+    font-size: 0.9rem;
+  }
+
+  .modal-content img {
+    width: 55%;
+  }
+
+  .description {
+    width: 40%;
+  }
+}
+
+@media (max-width: 499px) and (min-width: 400px) {
+  .modal-content {
+    flex-direction: row;
+    font-size: 0.85rem;
+  }
+
+  .modal-content img {
+    width: 60%;
+  }
+
+  .description {
+    width: 35%;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 300px) {
+  .modal-content {
+    flex-direction: column; /* Cambiar a columna para pantallas más pequeñas */
+    font-size: 0.8rem;
+    overflow-y: auto; /* Agregar desplazamiento al modal completo */
+    max-height: 90vh; /* Limitar la altura del modal */
+  }
+
+  .modal-content img {
+    width: 100%; /* Imagen toma el 100% */
+    margin-bottom: 10px; /* Separar imagen de la descripción */
+  }
+
+  .description {
+    width: 100%; /* Descripción toma el 100% */
+    max-height: 300px; /* Limitar la altura de la descripción */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+  }
+}
+
+/* Estilo para pantallas pequeñas, como tabletas y móviles */
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal img {
+    max-width: 100%; /* Imagen se ajusta al 100% */
+  }
+}
+
 
 
 /* Estilos del banner de redes sociales */
-.social-banner {
+.social-banner2 {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
   
 }
-.social-banner img {
+.social-banner2 img {
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -946,7 +1131,7 @@ footer nav.redes-sociales {
   text-align: left;
 }
 p.copyright {
-  background-color: #50514F;
+  background-color: #000000;
   color: #ffffff;
   padding: 10px 0;
   margin:20px 0 0 0;
@@ -1433,24 +1618,10 @@ table.registrados tr:nth-child(4n-1) {
   margin-top: 20px; /* Puedes ajustar el margen como prefieras */
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .modal-content {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .modal img {
-      max-width: 100%;
-  }
-
-  .description {
-      text-align: center;
-  }
-}
 
 /*acerca de mi*/
 
+/* Estilo general para el contenedor */
 .contenedorquienes {
   display: flex;
   align-items: center;
@@ -1458,6 +1629,7 @@ table.registrados tr:nth-child(4n-1) {
   text-align: center; /* Centra el texto dentro del párrafo */
 }
 
+/* Estilo para la imagen redonda */
 .imagen-redonda {
   border-radius: 50%;
   width: 200px; /* Ajusta el tamaño según lo necesites */
@@ -1465,8 +1637,26 @@ table.registrados tr:nth-child(4n-1) {
   margin-right: 30px; /* Espacio entre la imagen y el párrafo */
 }
 
+/* Estilo para el párrafo */
 .contenedorquienes p {
   max-width: 900px; /* Ajusta el tamaño del párrafo según lo necesites */
+}
+
+/* Media Queries para pantallas entre 300px y 800px */
+@media (max-width: 800px) and (min-width: 300px) {
+  .contenedorquienes {
+    flex-direction: column; /* Cambia la disposición a columna (imagen sobre texto) */
+    align-items: center; /* Centra la imagen y el texto */
+  }
+
+  .imagen-redonda {
+    margin-right: 0; /* Elimina el margen derecho en disposición vertical */
+    margin-bottom: 20px; /* Añade espacio entre la imagen y el texto */
+  }
+
+  .contenedorquienes p {
+    max-width: 100%; /* Ajusta el tamaño del párrafo a todo el ancho disponible */
+  }
 }
 
 .banner {
@@ -1479,6 +1669,7 @@ table.registrados tr:nth-child(4n-1) {
   color: white;
   font-size: 2rem;
   text-align: center;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1505,6 +1696,8 @@ table.registrados tr:nth-child(4n-1) {
   color: white;
   font-size: 2rem;
   text-align: center;
+  cursor: pointer;
+
 }
 
 @media (max-width: 1000px) { .banner { height: 51vh; font-size: 1.4rem; } }
@@ -1549,3 +1742,126 @@ table.registrados tr:nth-child(4n-1) {
 .pinterest { background: #bd081c; }
 .email { background: #555; }
 .instagram { background: #e4405f; }
+
+
+/*Blog*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.contenedor_blog {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.titulo {
+  text-align: center;
+  color: #333;
+}
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.entrada-blog {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.imagen img {
+  width: 100%;
+  border-radius: 5px;
+}
+.texto-entrada {
+  padding: 10px 0;
+}
+.texto-entrada h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+.info {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/*entradas blog*/
+
+.bodyblog {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+.blog-container {
+  max-width: 900px;
+  background: #fff;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blog-banner {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+.blog-header {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+.blog-header a {
+  color: #f4a742;
+  text-decoration: none;
+}
+.blog-header a:hover {
+  text-decoration: underline;
+}
+.blog-content {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #333;
+}
+@media (max-width: 1000px) {
+  .blog-container { max-width: 850px; }
+  .blog-banner { height: 220px; }
+}
+@media (max-width: 900px) {
+  .blog-container { max-width: 800px; }
+  .blog-banner { height: 200px; }
+}
+@media (max-width: 800px) {
+  .blog-container { max-width: 700px; }
+  .blog-banner { height: 180px; }
+}
+@media (max-width: 700px) {
+  .blog-container { max-width: 600px; }
+  .blog-banner { height: 160px; }
+}
+@media (max-width: 600px) {
+  .blog-container { max-width: 500px; }
+  .blog-banner { height: 140px; }
+}
+@media (max-width: 500px) {
+  .blog-container { max-width: 400px; }
+  .blog-banner { height: 120px; }
+}
+@media (max-width: 400px) {
+  .blog-container { max-width: 350px; padding: 10px; }
+  .blog-banner { height: 100px; }
+}
+@media (max-width: 300px) {
+  .blog-container { max-width: 100%; padding: 5px; }
+  .blog-banner { height: 80px; }
+}
