@@ -1147,6 +1147,28 @@ div.galeria a{
   display: inline-block;
   margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+  .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente si es necesario */
+      gap: 10px; /* Espaciado entre las imágenes */
+  }
+
+  .galeria a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .galeria img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+  }
+}
 /* Registro **/
 form.registro h3 {
   text-align: center;
