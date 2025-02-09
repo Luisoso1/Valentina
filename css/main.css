@@ -1149,25 +1149,25 @@ div.galeria a{
 }
 
 @media (max-width: 768px) {
-  .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; /* Centra horizontalmente */
-      align-items: center; /* Centra verticalmente si es necesario */
-      gap: 10px; /* Espaciado entre las imágenes */
-  }
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente si es necesario */
+        gap: 10px; /* Espaciado entre las imágenes */
+    }
 
-  .galeria a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+    .galeria a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .galeria img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-  }
+    .galeria img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
 }
 /* Registro **/
 form.registro h3 {
@@ -1888,4 +1888,84 @@ body {
 @media (max-width: 300px) {
   .blog-container { max-width: 100%; padding: 5px; }
   .blog-banner { height: 80px; }
+}
+
+/* Carusel*/
+
+/* Ajusta los videos para que tengan el mismo tamaño y mantengan proporción */
+.carousel iframe,
+.carousel video {
+    width: 48%; /* Ajustamos al 48% para que entren dos en la misma fila */
+    aspect-ratio: 16 / 9;
+    max-height: 340px;
+    border: none;
+}
+
+/* Contenedor principal del carrusel */
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Contenedor del carrusel */
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Botones de navegación */
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* 📌 RESPONSIVE DESIGN: Apilar videos solo cuando la pantalla sea menor a 1000px */
+@media (max-width: 1000px) {
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel iframe,
+    .carousel video {
+        width: 90%; /* Para que no ocupen toda la pantalla */
+    }
+
+    /* Agregar espacio entre los videos */
+    .carousel iframe:not(:last-child),
+    .carousel video:not(:last-child) {
+        margin-bottom: 20px; /* Espacio entre videos */
+    }
 }
